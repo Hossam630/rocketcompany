@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head class="sm:scroll-smooth">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js" defer></script>
+</head>
+<body class="dark:bg-black dark:text-white ">
+    <header class="bg-teal-700 w-full p-4 flex justify-center sticky top-0 z-10">
+        <section class="flex max-w-3xl w-full items-center justify-between text-white ">
+            <a href="#hero" class="text-2xl font-medium "><h1>🚀 Rocket company</h1></a>
+            <button id="humbergur-btn" class="sm:hidden text-2xl w-8 h-6 relative ">
+                <div class="w-8 h-1 bg-white rounded transition-all duration-500 before:content-[''] before:w-8 before:h-1 before:bg-white before:absolute before:top-0 before:rounded before:-translate-x-4 after:content-[''] after:w-8 after:h-1 after:bg-white after:absolute after:bottom-0 after:rounded after:-translate-x-4"></div>
+            </button>
+            <nav class=" grow flex-nowrap justify-end gap-5 sm:flex hidden">
+                <a href="#rockets" class="text-l font-medium">Our Rockets</a>
+                <a href="#testimonials" class="text-l font-medium">Testimonials</a>
+                <a href="#contact" class="text-l font-medium">Contact Us</a>
+            <nav>
+        </section>
+    </header>
+    <section id="mobile-menu" class="absolute top-0 w-full hidden flex-col bg-white dark:bg-black">
+        <nav class="flex flex-col text-5xl flex-grow text-teal-700 dark:text-white items-center mt-[68px] origin-top animate-open-menu">
+            <a href="#hero" class="py-8">Home</a>
+            <a href="#rockets" class="py-8">Rockets</a>
+            <a href="#testimonials" class="py-8">Testimonials</a>
+            <a href="#contact" class="py-8">Contact Us</a>
+        </nav>
+    </section>
+    <main id="app-main" class=" w-full flex items-center justify-center flex-col">
+        <section id="hero" class="flex justify-center items-center sm:flex-row flex-col-reverse p-6 scroll-m-14 widescreen:section-min-height tallscreen:section-min-height">
+            <article class="flex justify-center items-center flex-col">
+                <h2 class="text-3xl max-w-md text-center font-bold">
+                    We Boldly Go Where <span class="text-indigo-700 dark:text-indigo-300">No Rocket Has Gone</span> Before...
+                </h2>
+                <p class="text-slate-700 dark:text-slate-400 text-xl text-center mt-4">we're building rockets for the next century today from the moon to mars, jupiter and byond...</p>
+            </article>
+            <img src="./img/rocketdab.png" alt="rocket" class="w-1/2">
+        </section>
+        <hr class=" border-black dark:border-white w-1/2">
+        <section id="rockets" class="p-6 my-12 flex flex-col items-center scroll-m-14 widescreen:section-min-height tallscreen:section-min-height">
+            <h1 class="font-bold text-4xl mb-6">Our Rockets</h1>
+            <ul class="flex flex-col flex-grow sm:flex-row items-center justify-center gap-8">
+                <li class="w-2/3 sm:w-5/6 flex flex-col items-center border-solid border dark:bg-slate-900 rounded-2xl p-4 border-black dark:border-gray-400 ">
+                    <img src="./img/rocketman.png" alt="explorer" class="w-1/2" >
+                    <h3 class="text-2xl ">Explorer</h3>
+                    <p class="text-xl sm:hidden dark:text-slate-400">$</p>
+                    <p class="text-xl hidden text-center sm:block dark:text-slate-400">Affordable Exploration</p>
+
+                </li>
+                <li class="w-2/3 sm:w-5/6 flex flex-col items-center border-solid border dark:bg-slate-900 rounded-2xl p-4 border-black dark:border-gray-400 ">
+                    <img src="./img/rocketride.png" alt="explorer" class="w-1/2" >
+                    <h3 class="text-2xl ">Adventurer</h3>
+                    <p class="text-xl sm:hidden dark:text-slate-400">$$</p>
+                    <p class="text-xl hidden text-center sm:block dark:text-slate-400">Best Selling Rocket</p>
+
+                </li>
+                <li class="w-2/3 sm:w-5/6 flex flex-col items-center border-solid border dark:bg-slate-900 rounded-2xl p-4 border-black dark:border-gray-400 ">
+                    <img src="./img/rocketlaunch.png" alt="explorer" class="w-1/2" >
+                    <h3 class="text-2xl ">infinity</h3>
+                    <p class="text-xl sm:hidden dark:text-slate-400">$$$</p>
+                    <p class="text-xl hidden text-center sm:block dark:text-slate-400">Luxorous Exploration</p>
+
+                </li>
+            </ul>
+        </section> 
+        <hr class=" border-black dark:border-white w-1/2">
+        <section id="testimonials" class="p-6 my-12 scroll-m-14 widescreen:section-min-height tallscreen:section-min-height">
+            <h1 class="font-bold text-4xl mb-6 text-center">Testimonials</h1>
+            <figure class="my-12 max-w-3xl">
+                <blockquote class=" bg-teal-700 dark:bg-transparent text-white dark:text-slate-400 p-14 relative rounded-3xl ">
+                    <p class="text-2xl sm:text-3xl before:content-['\201C'] before:text-8xl before:absolute before:font-serif before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:text-8xl after:font-serif after:absolute after:bottom-0 after:right-0 after:transform after:-translate-x-4 after:translate-y-5">
+                        Rocket  
+                        has always been there
+                        for me. Their Explorer rocket arrived in a wooden crate as expected.
+                        Life-long customer! A++ shopping experience.
+                    </p>
+                </blockquote>
+                <figcaption class="text-right text-2xl italic dark:text-slate-400 text-slate-700">
+                    &#8212;Wile E. Coyote, Genius
+                </figcaption>
+            </figure>
+            <figure class="my-12 max-w-3xl">
+                <blockquote class=" bg-teal-700 dark:bg-transparent text-white dark:text-slate-400 p-14 relative rounded-3xl ">
+                    <p class="text-2xl sm:text-3xl before:content-['\201C'] before:text-8xl before:absolute before:font-serif before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:text-8xl after:font-serif after:absolute after:bottom-0 after:right-0 after:transform after:-translate-x-4 after:translate-y-5">
+                        The Rocket Adventurer Rocket has thwarted my Illudium Q-36 Explosive Space Modulator on several
+                        occassions. <span class="italic">This makes me very, very angry!</span> Nevertheless, K-9
+                        and I have awarded Acme the
+                        Martian contract for space exploration rockets based on Acme's quality and sturdy designs.
+                    </p>
+                </blockquote>
+                <figcaption class="text-right text-2xl italic dark:text-slate-400 text-slate-700">
+                    &#8212;Marvin The Martian &amp; K-9
+                </figcaption>
+            </figure>
+            <figure class="my-12 max-w-3xl">
+                <blockquote class=" bg-teal-700 dark:bg-transparent text-white dark:text-slate-400 p-14 relative rounded-3xl ">
+                    <p class="text-2xl sm:text-3xl before:content-['\201C'] before:text-8xl before:absolute before:font-serif before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:text-8xl after:font-serif after:absolute after:bottom-0 after:right-0 after:transform after:-translate-x-4 after:translate-y-5">
+                        I knew I not only wanted &#8212; <span class="italic">I needed</span> &#8212; Rockets's Infinity
+                        Rocket for my mission in space. Rocket delivered in one day! Nothing says <q class="italic">Take
+                            me
+                            to your leader</q> like Rockets's Infinity Rocket! 💯
+                    </p>
+                </blockquote>
+                <figcaption class="text-right text-2xl italic dark:text-slate-400 text-slate-700">
+                    &#8212;Buzz Lightyear
+                </figcaption>
+            </figure>
+        </section>
+        <hr class=" border-black dark:border-white w-1/2">
+        <section id="contact" class="p-6 my-12 w-full max-w-3xl scroll-m-14 widescreen:section-min-height tallscreen:section-min-height">
+            <h1 class="font-bold text-4xl mb-6 text-center">Contact Us</h1>
+            <form action="" class="max-w-4xl flex flex-col">
+                <label for="subject" class="text-2xl sm:3xl">Subject</label>
+                <input type="text" id="subject" class="w-full my-6 p-4 rounded-2xl text-2xl text-black border-black border-solid border focus:outline-none dark:border-none" required min="20" max="60"/>
+                <label for="message" class="text-2xl sm:3xl">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" class="w-full my-6 p-4 rounded-2xl text-2xl text-black border-black border border-solid focus:outline-none dark:border-none" required></textarea>
+                <button type="submit" class="px-10 text-center py-2 text-2xl text-white dark:text-slate-900 font-bold bg-teal-700 dark:bg-teal-400 mx-auto rounded-2xl ">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-teal-700 w-full mt-8">
+        <section class="p-6 mx-auto max-w-3xl flex sm:flex-row flex-col justify-between">
+            <address>
+                Rocket powered products.inc <br>
+                nasr city, cairo <br>
+                tel: +2011456832825 <br>
+                Email: H055am@outlook.com
+            </address>
+            <nav class="hidden sm:flex flex-col text-center">
+                <a href="#rockets" class="hover:opacity-40">Our Rockets</a>
+                <a href="#testimonials" class="hover:opacity-40">Testimonails</a>
+                <a href="#contact" class="hover:opacity-40">Contact Us</a>
+            </nav>
+            <p class="text-right"> 
+                copyright &copy;2024 <br>
+                all rights reserved.
+            </p>
+        </section>
+    </footer>
+</body>
+</html>
